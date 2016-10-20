@@ -1,0 +1,21 @@
+<html>
+<head>
+  <h1>Mobile Phone Catalogue</h1>
+  <ul>
+  <h2>Select a brand </h2>
+ <link  href ="{{ url_for('static', filename='css/tamanyoImagenes.css') }}" rel="stylesheet" />
+<link href ="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+ rel="stylesheet" />
+</head>
+<body>
+   <ul>
+    <ul>
+      {% for pictures in pictures %}
+       <a href="{{pictures}}">   <img src="static/img/{{pictures }}.jpg" id="tamanyo"
+       
+       /> </a>
+
+    {% endfor %}
+    </ul>
+    </body>
+</html>
