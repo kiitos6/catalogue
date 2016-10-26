@@ -1,0 +1,49 @@
+The aim of this report is to describe the web-app and explain how it works and how are 
+architected.
+
+INTRODUCTION
+
+The web-app is an online catalogue of mobile phones. There are four main screens. Home, 
+Brands, Suggestions and Websites. 
+In the first one, Home, it is just a title page with a picture. The second one, Brands, 
+is a screen that shows all the brands available in the catalogue, so you can click in 
+one and you will see the phones of that brand. 
+The third one, Suggestions, where you can see two selection of phones ones with good battery
+and others with good camera.
+The last one, is Websites, just a list of the different brands to click and visit the brand
+webpage.
+
+DESIGN
+
+The web-app is ubicated at src/catalogue. Inside this folder, we can see the python flask file 
+-webapp.py- which the one you need to execute to run the webapp. There are too other folders like /static,
+where there are two more folders which are /css where are all the css files and /img where are all
+ the images stored. Inside /catalogue we have too /templates where are stored all the html templates.
+The templates bq.html, iphone.html, nokia.html, xiaomi.html, lg.html, samsung.html, sony.html
+and motorola.html are the templates used to show the phones of the brand. home.html is the home screen, 
+links.html is for the screen of websites, suggestions.html for the screen of suggestions and brands.html
+for show the brands pictures to select it.
+
+Enhancements
+
+There is some features I would have liked to  add but I had no time. For example, when you click on a 
+suggestion mobile you are redirected to the brand mobile, but it would be great if you were 
+redirected to the model of phone, not just the brand page. Another good feature could have been a search
+engine to find phones directly. An improvement could be a new page for each phone, with more and bigger pictures.
+
+CRITICAL EVALUATION
+
+The webapp is pretty simply and you can't interact too much with it. 
+
+PERSONAL EVALUATION
+
+In this work I have learnt everything I know of python flask, html and css files. I have found 
+some problems that I hope I will overcome in the next coursework. I should have used more generic 
+templates, so that is faster to apply new changes and features. This is something I have to improve in next 
+work. I looked on the internet for the problems I found when I was doing the desing.
+
+SUMMARY OF RESOURCES
+
+-Woorkbook
+-http://www.tutorialhtml.net/
+-http://www.desarrolloweb.com/articulos/barra-navegacion-horizontal-listas-css.html
