@@ -1,13 +1,17 @@
 <html>
 <head>
-
-<link  href ="{{ url_for('static', filename='css/tamanyoImagenes.css') }}" rel="stylesheet" />
+<link href ="{{ url_for('static', filename='css/tamanyoImagenes.css') }}" rel=stylesheet" />
 <link href ="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
 <link href =" {{ url_for('static', filename='css/colorFondo.css') }}" rel="stylesheet"/>
 <link href ="  {{ url_for('static', filename='css/barraNavegacion.css') }}" rel="stylesheet" />
 
+<link href ="  {{ url_for('static', filename='css/body.css') }}" rel="stylesheet" />
+<link href ="  {{ url_for('static', filename='css/cuadroMovil.css') }}" rel="stylesheet" />
+
 </head>
 <body>
+
+
   <div id="colorBarra">
   
     <div id="navegador">
@@ -16,6 +20,7 @@
       <li><a href="/brands"> Brands</a></li>
       <li><a href="/suggestions"> Suggestions</a></li>
       <li><a href="/links"> Websites</a></li>
+      
     </ul>
     </div>
   </div>
@@ -24,14 +29,11 @@
 
   <h1>Mobile Phone Catalogue</h1>
   <br />
-  <h2>Select a brand </h2>
-  <ul>
-    <ul>
+  
+  
+
       <br />
-      {% for pictures in pictures %}
-       <a href="{{pictures}}">   <img src="static/img/{{pictures }}.jpg" id="tamanyo" /> </a>
-     
-    {% endfor %}
-    </ul>
+   
+  
     </body>
 </html>

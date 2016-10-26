@@ -1,0 +1,54 @@
+<html>
+<head>
+<link href ="{{ url_for('static', filename='css/tamanyoImagenes.css') }}" rel=stylesheet" />
+<link href ="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+<link href =" {{ url_for('static', filename='css/colorFondo.css') }}" rel="stylesheet"/>
+<link href ="  {{ url_for('static', filename='css/barraNavegacion.css') }}" rel="stylesheet" />
+<link href ="  {{ url_for('static', filename='css/cuadroMovil.css') }}" rel="stylesheet" />
+<link href ="  {{ url_for('static', filename='css/contenedorFoto.css') }}" rel="stylesheet" />
+</head>
+<body>
+
+
+  <div id="colorBarra">
+  
+    <div id="navegador">
+    <ul>
+     <li><a href="/"> Home</a></li>
+      <li><a href="/brands"> Brands</a></li>
+      <li><a href="/suggestions"> Suggestions</a></li>
+      <li><a href="/links"> Websites</a></li>
+      
+    </ul>
+    </div>
+  </div>
+  
+      <br />
+
+  <h1>Mobile Phone Catalogue</h1>
+  <br />
+  <h4>If you want a good autonomy...</h4>
+  <ul>
+    <ul>
+      <br />
+      {% for pictures,brand,model in pictures_brand_model %}
+      
+       <a href="{{brand}}">   <img src="static/img/{{pictures }}.jpg"
+      id="cuadro" /><span><span>{{ model }} </span></span></a>
+      
+      {% endfor %}
+<hr />
+
+  <h4>If you like to take good photos...</h4>
+  <ul>
+    <ul>
+      <br />
+      {% for pictures1,brand1,model1 in pictures1_brand1_model1 %}
+      
+       <a href="{{brand1}}">   <img src="static/img/{{pictures1 }}.jpg"
+      id="cuadro" /><span><span>{{ model1 }} </span></span></a>
+     
+      {% endfor %}
+    </ul>
+    </body>
+</html>

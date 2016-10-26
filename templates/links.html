@@ -24,14 +24,15 @@
 
   <h1>Mobile Phone Catalogue</h1>
   <br />
-  <h2>Select a brand </h2>
+  <h2>Select a brand to visit the webpage</h2>
   <ul>
     <ul>
       <br />
-      {% for pictures in pictures %}
-       <a href="{{pictures}}">   <img src="static/img/{{pictures }}.jpg" id="tamanyo" /> </a>
+      {% for pictures,link in pictures_links %}
+      <!-- <a href="{{ link }}" target="_blank">   <img
+      src="static/img/{{pictures }}.jpg" id="tamanyo" /> </a>--!>
      
+      <li> <a href="{{ link }}" target="_blank"> {{ pictures }} </a></li>
     {% endfor %}
     </ul>
     </body>
-</html>
